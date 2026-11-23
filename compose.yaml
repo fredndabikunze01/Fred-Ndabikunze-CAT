@@ -1,6 +1,9 @@
 services:
   juice-shop:
-    image: juice-shop:local
+    image: fredndabikunze01/fred-ndabikunze-juice:v6.0
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: juice-shop
     restart: unless-stopped
     ports: ["3001:3000"]
